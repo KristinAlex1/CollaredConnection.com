@@ -1,0 +1,222 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: #000000;
+    border-width: 10px;
+}
+
+.navbar .logo-container img {
+    height: 40px; /* Adjust size as needed */
+}
+
+.logo-text {
+    color: var(--white); /* Keep text white */
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--light-blue); /* Light blue color on hover */
+}
+
+.nav-actions a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    border-radius: 20px; /* More rounded borders for a modern look */
+    transition: all 0.3s ease;
+}
+
+.nav-actions .join-us {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.nav-actions a:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+/* Background image styles */
+.hero-section {
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+/* Responsive styles for smaller screens */
+
+
+.feedback-container {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background: transparent; /* Assuming there's a background image set elsewhere */
+}
+
+#feedback-form {
+    width: 90%;
+    max-width: 800px; /* Adjusted to a larger size */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opacity for better readability */
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* Larger border-radius for a softer look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* A softer, larger shadow */
+    margin: auto; /* To center the form in the container */
+}
+
+#feedback-form h2 {
+    #feedback-form h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px; /* Increase this value to create more space */
+        font-size: 2em; /* Keep or adjust the size as needed */
+        /* Other styles... */
+    }
+    
+}
+
+.form-group {
+    margin-bottom: 30px; /* More space between form groups */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2em; /* Larger font size for labels */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+#feedback-form textarea {
+    width: 100%;
+    padding: 15px; /* Larger padding for input and textarea */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box; /* To include padding in width */
+}
+
+#feedback-form button {
+    width: 100%;
+    padding: 20px; /* Larger padding for a bigger button */
+    background-color: #29abe2; /* Keep the button color consistent */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Space above the button */
+}
+
+#feedback-form button:hover {
+    background-color: #2189b0; /* A darker color on hover */
+}
+
+@media (max-width: 768px) {
+    .feedback-container {
+        padding: 20px;
+    }
+
+    #feedback-form {
+        width: calc(100% - 40px); /* Full width minus padding on mobile */
+        padding: 20px;
+    }
+}
+
+
+
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #474747;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-form, .services-section {
+        flex-direction: column;
+    }
+    .service-box {
+        flex-basis: 90%; /* Full width for mobile */
+        margin: 10px auto; /* Center the box with automatic horizontal margin */
+    }
+}

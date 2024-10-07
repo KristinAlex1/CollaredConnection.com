@@ -1,0 +1,154 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: #000000;
+    border-width: 10px;
+}
+
+.navbar .logo-container img {
+    height: 40px; /* Adjust size as needed */
+}
+
+.logo-text {
+    color: var(--white); /* Keep text white */
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--light-blue); /* Light blue color on hover */
+}
+
+.nav-actions a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    border-radius: 20px; /* More rounded borders for a modern look */
+    transition: all 0.3s ease;
+}
+
+.nav-actions .join-us {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.nav-actions a:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+h3{
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+/*category*/
+
+.index-category{
+
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+
+}
+
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: red
+
+}
+.index-category-box h3{
+    font-size: 22;
+    
+
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #474747;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-form, .services-section {
+        flex-direction: column;
+    }
+    .service-box {
+        flex-basis: 90%; /* Full width for mobile */
+        margin: 10px auto; /* Center the box with automatic horizontal margin */
+    }
+}

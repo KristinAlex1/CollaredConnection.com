@@ -1,0 +1,340 @@
+/* Reset some default styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: #000000;
+    border-width: 10px;
+}
+
+.navbar .logo-container img {
+    height: 40px; /* Adjust size as needed */
+}
+
+.logo-text {
+    color: var(--white); /* Keep text white */
+    font-weight: bold;
+    font-size: 24px; /* Adjust the font size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--light-blue); /* Light blue color on hover */
+}
+
+.nav-actions a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid var(--white);
+    border-radius: 20px; /* More rounded borders for a modern look */
+    transition: all 0.3s ease;
+}
+
+.nav-actions .join-us {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.nav-actions a:hover {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+/* Background image styles */
+.hero-section {
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Responsive styles for smaller screens */
+
+
+/* Search Section Styles */
+.search-section {
+    background: var(--light-grey);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.search-form {
+    display: inline-flex;
+    justify-content: center;
+    gap: 15px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[list],
+select {
+    padding: 10px;
+    border: 2px solid var(--border-grey);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--dark-text);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--blue);
+}
+
+/* Service Boxes Section */
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--light-grey); /* Different background to distinguish section */
+}
+
+.service-box {
+    flex: 0 1 calc(25% - 20px); /* Adjust size based on your design preference */
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: var(--dark-text);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.service-section {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 20px; /* Separation between sections */
+}
+
+
+.service-section h2 {
+    background-color: rgba(255, 255, 255, 0.5); /* For readability */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Ensure background images cover their sections */
+.service-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+h3{
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+/*category*/
+
+.index-category{
+
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+
+.index-category p{
+
+    color: #111;
+    text-align: center;
+    padding-bottom: 80px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+
+.index-category-box{
+    width: 240px;
+    height: 240px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+    
+
+}
+
+.index-category-box:nth-child(2){
+    background-image: url('plumber.jpg');
+    
+
+}
+.index-category-box:nth-child(3){
+    background-image: url('Electrician.jpg');
+    
+
+}
+.index-category-box:nth-child(4){
+    background-image: url('mechanic.jpg');
+    
+
+}
+.index-category-box:nth-child(5){
+    background-image: url('welder.jpg');
+    
+
+}
+
+.index-category-box:hover  .dark-overlay{
+    
+    opacity: 0;
+
+}
+
+.index-category-box h3{
+    font-size: 22px;
+    line-height: 6px;
+    text-align: center;
+    text-shadow: -2px -4px 4px #000000;
+    text-underline-offset: 10;
+    z-index: 100;
+
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    transition: all ease-in-out 300ms;
+
+}
+
+
+
+.site-footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #474747;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .search-form, .services-section {
+        flex-direction: column;
+    }
+    .service-box {
+        flex-basis: 90%; /* Full width for mobile */
+        margin: 10px auto; /* Center the box with automatic horizontal margin */
+    }
+}

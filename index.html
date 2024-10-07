@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Collared Connection Logo">
+            </a>
+            <span class="logo-text">Collared-Connection</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="feedback.html">Reviews</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="signUpPage.html" class="sign-in">Sign In</a>
+            <a href="logInPage.html" class="log-in">Log In</a>
+            <a href="joinUsPage.html" class="join-us">Join Us</a>
+        </div>
+
+        
+    </nav>
+    <div class="hero-section">
+        <h1>CONNECT!</h1>
+        <p>Connect with your local workers.</p>
+        <section class="search-section">
+        <form class="search-form" action="#" method="get">
+            <div class="form-group">
+                <select name="service" id="service">
+                    <option value="">Select Service</option>
+                    <option value="electrician">Electrician</option>
+                    <option value="plumber">Plumber</option>
+                    <option value="welder">Welder</option>
+                    <option value="carpenter">Carpenter</option>
+                    <option value="mechanic">Mechanic</option>
+                    <option value="bus_driver">Bus Driver</option>
+                    <option value="brickmason">Brickmason</option>
+                    <option value="Other">Other</option>
+                        <!-- Add more services as needed -->
+                    
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                
+                    <input list="cities" name="location" id="location" placeholder="Enter Location" autocomplete="off" required>
+                    <datalist id="cities">
+                        <!-- Example cities, add more according to your needs -->
+                        <option value="Kentville">
+                        <option value="Wolfville">
+                        <option value="New Minas">
+                        <option value="Greenwood">
+                        <option value="Digby">
+                        <option value="Dartmouth">
+                        <option value="Halifax">
+                        <!-- Add more cities -->
+                    </datalist>
+
+            </div>
+            <div class="form-group">
+                <select name="distance" id="distance">
+                    <option value="">Choose Distance</option>
+                    <option value="10">10km</option>
+                    <option value="25">25km</option>
+                    <option value="50">50km</option>
+                    <!-- Add more distance options -->
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Search</button>
+            </div>
+            
+            
+        </form>
+    </section>
+    </div>
+
+    <section class="index-category">
+        <p>
+            Services
+        </p>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>
+                Plumber
+            </h3>
+        </a>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>
+                Electrician
+            </h3>
+        </a>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>
+                Mechanic
+            </h3>
+        </a>
+        <a href="#" class="index-category-box">
+            <div class="dark-overlay"></div>
+            <h3>
+                Welder
+            </h3>
+        </a>
+
+
+
+
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We connect skilled workers with local opportunities.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@collared-connection.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Connect with us on social media.</p>
+                <!-- Icons or links to social media here -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Collared Connection. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(e) {
+                const password = document.getElementById("password").value;
+                const confirmPassword = document.getElementById("confirm-password").value;
+                if (password !== confirmPassword) {
+                    e.preventDefault(); // Prevent form submission
+                    alert("Passwords do not match."); // Show an error message
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
+

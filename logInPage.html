@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - Collared Connection</title>
+    <link rel="stylesheet" href="logInPage.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Log In</h2>
+        <form action="submit-log-in.php" method="POST">
+            <label for="account-name">Account Name:</label>
+            <input type="text" id="account-name" name="account-name" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            const formData = {
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value,
+            };
+            
+            fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.text())
+            .then(data => {
+                if(data === 'Success') {
+                    // Handle login success (e.g., redirect to another page)
+                    window.location.href = '/successPage.html'; // Redirect to a success page
+                } else {
+                    // Handle login failure (e.g., show an error message)
+                    alert('Login failed: ' + data);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+        </script>
+        
+</body>
+</html>

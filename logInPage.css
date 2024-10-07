@@ -1,0 +1,60 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+/* Log In form container */
+.form-container {
+    background-color: #ffffff; /* White background for the form */
+    padding: 40px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 400px; /* Maximum width of the form */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    font-size: 16px; /* Readable font size */
+    color: #003366; /* Dark blue text */
+}
+body {background-color:#003366 }
+/* Input fields styling */
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 20px; /* Space between input fields */
+    padding: 10px;
+    font-size: 16px; /* Readable font size */
+    border: 1px solid #ccc; /* Soft border */
+    border-radius: 4px; /* Matching rounded corners */
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: var(--blue); /* Using the blue color variable */
+    color: var(--white); /* White text */
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Prominent font size for action */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #0052a3; /* Slightly darker blue on hover */
+}

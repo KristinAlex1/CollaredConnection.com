@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Collared Connection Logo">
+            </a>
+            <span class="logo-text">Collared-Connection</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ServicePage.html">Services</a></li>
+            <li><a href="feedback.html">Reviews</a></li>
+            <li><a href="#more">More</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="signUpPage.html" class="sign-in">Sign In</a>
+            <a href="logInPage.html" class="log-in">Log In</a>
+            <a href="joinUsPage.html" class="join-us">Join Us</a>
+        </div>        
+    </nav>
+        <section class="index-category">
+            <div class="index-category-box">
+                <h3>
+                    Plumber
+                </h3>
+            </div>
+
+        </section>
+        
+    
+    
+        <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We connect skilled workers with local opportunities.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@collared-connection.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Connect with us on social media.</p>
+                <!-- Icons or links to social media here -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Collared Connection. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(e) {
+                const password = document.getElementById("password").value;
+                const confirmPassword = document.getElementById("confirm-password").value;
+                if (password !== confirmPassword) {
+                    e.preventDefault(); // Prevent form submission
+                    alert("Passwords do not match."); // Show an error message
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
+

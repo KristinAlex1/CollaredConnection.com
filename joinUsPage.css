@@ -1,0 +1,70 @@
+/* General styles to maintain consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #003366; /* Keeping the text color consistent with the navbar */
+}
+body {background-color:#003366 }
+
+/* Centering the form container */
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Adjust the width of the forms */
+    margin: 50px auto; /* Center the form with auto margins */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+h2 {
+    color: var(--blue); /* Title color */
+    text-align: center; /* Centering the title text */
+    margin-bottom: 20px; /* Space between title and form fields */
+}
+
+/* Styling form fields for consistency */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form fields */
+}
+
+label {
+    font-size: 16px; /* Slightly larger label text for readability */
+    color: #003366; /* Consistent text color */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc; /* Soft border color */
+    border-radius: 4px; /* Matching rounded corners */
+    font-size: 16px; /* Readable font size */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: var(--blue); /* Consistent button color */
+    color: #ffffff; /* White text on buttons */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Making the button text stand out */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #0052a3; /* Darker shade of blue on hover for interaction feedback */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%; /* More width on smaller screens for readability */
+    }
+}
